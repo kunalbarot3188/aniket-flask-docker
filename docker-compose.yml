@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql-server
+    networks:
+      - vasecom_network
+    container_name: vasecom-appv2
+    image: vasecom-app:v2
+
+  mysql-server:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: AK@1234
+      MYSQL_DATABASE: akusers
+    ports:
+      - "3306:3306"    
+    networks:
+      - vasecom_network
+    volumes:
+      - mysql-data:/mysql_backup_directory
+    container_name: mysql-server
+
+networks:
+  vasecom_network:
+    driver: bridge
+
+volumes:
+  mysql-data:
