@@ -1,0 +1,229 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+header img {
+    max-width: 150px; /* Adjust the value as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Home entry styles */
+#home-entry {
+    position: relative;
+    height: 100vh; /* Make the div take the full height of the viewport */
+    background: url('images/vasecom.jpg') center/cover no-repeat; /* Set the image as background */
+}
+
+#home-entry::before {
+    content: " VaseCom - discover a curated collection of exquisite vases that blend artistry with functionality."; /* Add your company value proposition text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    padding: 50px 50px 50px 50px; /* Add padding for better visibility */
+    border-radius: 10px; /* Add rounded corners for aesthetics */
+    text-align: center; /* Center the text */
+}
+
+/* Main content styles */
+#catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+/* Individual divisions within main */
+#catalog > div {
+    width: calc(33.33% - 30px); /* Adjust the percentage and margin as needed */
+    margin: 15px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+}
+
+/* Images within each division */
+#catalog img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border: 2px solid #ddd; /* Add a border with a light gray color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Cart items section styles */
+#cart-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+#cart-items div {
+    text-align: center;
+}
+
+#cart-items img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border-radius: 15px;
+    border: 2px solid #ddd; /* Add a border with a light gray color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Ordered page styles */
+#order-confirmation {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#vasecom-story{
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners for aesthetics */
+    text-align: center; /* Center the text */
+    margin-top: 50px;
+}
+
+/* Button styles */
+#order-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set to 100% of the viewport height */
+}
+#order-button button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#order-button button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    align-self: center; /* Adjusted to center vertically */
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    height: 50px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Signup Page Styles */
+#signupForm{
+    max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#signupForm label{
+    display: block;
+    margin-bottom: 8px;
+}
+#signupForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#signupForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signupForm button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Login Page Styles */
+#loginForm{
+    max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm label{
+    display: block;
+    margin-bottom: 8px;
+}
+#loginForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#loginForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginForm button:hover {
+    background-color: #45a049;
+}

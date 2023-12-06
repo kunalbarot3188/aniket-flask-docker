@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaseCom - Cart</title>
+    <!-- Add your CSS link for styling here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="{{ url_for('home') }}">
+                <img src="{{url_for('static', filename='images/vasecom.jpg')}}" alt="VaseCom Logo">
+            </a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('products') }}">Products</a></li>
+                <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('cart') }}">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="cart-items">
+        <div>
+            <img src="{{url_for('static', filename='images/bohemiandrive.jpg')}}">
+            <p>Vase 1</p>
+        </div>
+        <br>
+        <div>
+            <img src="{{ url_for('static', filename='images/luckybamboo.jpg')}}">
+            <p>Vase 2</p>
+        </div>
+        <br>
+        <div>
+            <img src="{{ url_for('static', filename='images/oldblue.jpg')}}">
+            <p>Vase 3</p>
+        </div>
+
+    </main>
+    <div id="order-button">
+    <button onclick="window.location.href='{{ url_for("ordered") }}'">Place Order</button>
+    </div>
+    <!-- Add your footer if needed -->
+    <footer>
+        <h4>&copy; 2023 VaseCom. All rights reserved. | Designed by VaseCom Pvt. Ltd.</h4>
+    </footer>
+</body>
+</html>

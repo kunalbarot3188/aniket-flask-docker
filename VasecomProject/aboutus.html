@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaseCom - Home</title>
+    <!-- Add your CSS link for styling here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static',filename='images/vasecom.jpg') }}" alt="VaseCom Logo">
+            </a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('products') }}">Products</a></li>
+                <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('cart') }}">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="vasecom-story">
+            <p> We are a group of passionate individuals shared a common dream — to bring beauty and elegance into every home. Their journey began with a simple yet profound idea: the power of a vase to transform spaces and tell stories.
+                <br><br>
+                Inspired by the delicate balance between nature and art, VaseCom emerged as a haven for those who sought to adorn their living spaces with more than just décor. It was a vision to curate a collection of vases that spoke a universal language of beauty, craftsmanship, and sophistication.
+                <br><br>
+                VaseCom's founders, each with their unique perspective and appreciation for artistry, traveled the world in search of exceptional pieces. From the bustling markets of Marrakech to the serene pottery workshops in Kyoto, they handpicked vases that resonated with the spirit of diverse cultures.
+                <br><br>
+                The journey wasn't just about acquiring beautiful objects; it was about fostering a connection between individuals and the art they brought into their homes. VaseCom became more than a brand; it became a storyteller, a curator of memories, and a symbol of timeless beauty.
+                <br><br>
+                Every vase at VaseCom tells a story — a story of the hands that crafted it, the culture that inspired it, and the home that embraces it. Whether it's a modern minimalist piece or a vintage treasure, each vase adds a unique chapter to the narrative of its owner.
+                <br><br>
+                And so, VaseCom invites you to explore this enchanting world where art meets nature, where every vase is not just an object but a vessel of emotions and expressions. Welcome to VaseCom, where we believe in the magic of storytelling through artful vessels, and every home becomes a canvas waiting to be adorned.</p>
+        </section>
+    </main>
+
+     <!-- Add your footer if needed -->
+     <footer>
+        <h4>&copy; 2023 VaseCom. All rights reserved. | Designed by VaseCom Pvt. Ltd.</h4>
+    </footer>
+
+    <!-- Add your JavaScript scripts here if needed -->
+</body>
+</html>

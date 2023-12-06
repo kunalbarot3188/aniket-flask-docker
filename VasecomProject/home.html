@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaseCom - Home</title>
+    <!-- Add your CSS link for styling here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/vasecom.jpg')}}" alt="VaseCom Logo">
+            </a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+                <li><a href="{{ url_for('products') }}">Products</a></li>
+                <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('cart') }}">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home-entry">
+    </div>
+    <main id="catalog">
+        <div>
+            <div>
+                <img src="{{ url_for('static', filename='images/bohemiandrive.jpg')}}">
+                <p>Vase 1</p>
+            </div>
+            <br>
+            <div>
+                <img src="{{ url_for('static', filename='images/luckybamboo.jpg')}}">
+                <p>Vase 2</p>
+            </div>
+            <br>
+            <div>
+                <img src="{{ url_for('static', filename='images/oldblue.jpg')}}">
+                <p>Vase 3</p>
+            </div>
+            <br>
+        </div>
+        <div>
+            <div>
+                <img src="{{ url_for('static', filename='images/persianblue.jpg')}}">
+                <p>Vase 4</p>
+            </div>
+            <br>
+            <div>
+                <img src="{{ url_for('static', filename='images/pottedbananaplant.jpg')}}">
+                <p>Vase 5</p>
+            </div>
+            <br>
+            <div>
+                <img src="{{ url_for('static', filename='images/rosewhite.jpg')}}">
+                <p>Vase 6</p>
+            </div>
+            <br>
+        </div>
+        <div>
+            <div>
+                <img src="{{ url_for('static', filename='images/tulibouquest.jpg')}}">
+                <p>Vase 7</p>
+            </div>
+            <br>
+            <div>
+                <img src="{{ url_for('static', filename='images/whitecurve.jpg')}}">
+                <p>Vase 8</p>
+            </div>
+            <br>
+            <div>
+                <img src="{{ url_for('static', filename='images/yellotulips.jpg')}}">
+                <p>Vase 9</p>
+            </div>
+            <br>
+        </div>
+    </main>
+
+    <!-- Add your footer if needed -->
+    <footer>
+        <h4>&copy; 2023 VaseCom. All rights reserved. | Designed by VaseCom Pvt. Ltd.</h4>
+    </footer>
+
+    <!-- Add your JavaScript scripts here if needed -->
+</body>
+</html>
