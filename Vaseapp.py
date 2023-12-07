@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder='VasecomProject/', static_folder='VasecomP
 
 # Configure MySQL
 db = MySQLdb.connect(
-    host='localhost',
+    host='mysql-server',
     user='root',
     password='AK@1234',
     db='akusers'
@@ -67,4 +67,4 @@ def ordered():
     return render_template('ordered.html', usernames=usernames)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
