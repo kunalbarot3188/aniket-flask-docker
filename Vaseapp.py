@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder='VasecomProject/', static_folder='VasecomP
 # Configure MySQL
 db = MySQLdb.connect(
     host='mysql-server',
-    user='root',
+    user='admin',
     password='AK@1234',
     db='akusers'
 )
