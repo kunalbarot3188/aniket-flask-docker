@@ -8,8 +8,8 @@ services:
     ports:
       - "5000:5000"
     depends_on:
-      mysql-server:
-         condition: service_started
+      - mysql-server
+    restart: on-failure
     networks:
       - vasecom_network
     container_name: vasecom-appv2
@@ -18,8 +18,9 @@ services:
   mysql-server:
     image: mysql:latest
     environment:
-      MYSQL_ROOT_USER: root
-      MYSQL_ROOT_PASSWORD: AK@1234
+      MYSQL_USER: admin
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: AK@1234  
       MYSQL_DATABASE: akusers
     ports:
       - "3306:3306"    
