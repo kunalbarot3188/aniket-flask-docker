@@ -8,7 +8,8 @@ services:
     ports:
       - "5000:5000"
     depends_on:
-      - mysql-server
+      mysql-server:
+         condition: service_started
     networks:
       - vasecom_network
     container_name: vasecom-appv2
