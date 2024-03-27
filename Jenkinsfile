@@ -25,8 +25,8 @@ pipeline{
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
-                    sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=nodetodapp \
-                    -Dsonar.projectKey=nodetodapp '''
+                    sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=flaskapp \
+                    -Dsonar.projectKey=flaskapp '''
                 }
             }
         }
