@@ -19,7 +19,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/kunalbarot3188/aniket-flask-docker.git'
+                git branch: 'master', url: 'https://github.com/kunalbarot3188/aniket-flask-docker.git'
             }
         }
         stage("Sonarqube Analysis "){
